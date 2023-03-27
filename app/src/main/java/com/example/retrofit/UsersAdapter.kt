@@ -44,7 +44,7 @@ class UsersAdapter(users: List<UsersItem?>?) : Adapter<UsersAdapter.UsersHolder>
 
         holder.txtname.text = Userlist?.get(position)?.firstName
         holder.txtsurnam.text = Userlist?.get(position)?.lastName
-        holder.coler.text = Userlist?.get(position)?.
+        holder.coler.text = Userlist?.get(position)?.lastName
         holder.txtage.text = Userlist?.get(position)?.age.toString()
         holder.txtgender.text = Userlist?.get(position)?.password.toString()
         Glide.with(context).load(Userlist?.get(position)?.image).into(holder.imeusers)
